@@ -1,0 +1,52 @@
+body{
+    display: grid;
+    min-height: 100vh;
+}
+.hero{
+    align-self: start;
+}
+.footerwrapper{
+    align-self: end;
+}
+.text{
+    font-family: var(--font-2);
+    font-size: var(--sub);
+}
+.from{
+    display: flex;
+    flex-direction: column;
+}
+.submit-btn{
+    margin-top: 10px;
+}
+.sectiontwo-left{
+    font-family: var(--font-2);
+    font-weight: 600;
+}
+label{
+    font-family: var(--font-2);
+    font-size: var(--sub);
+}
+input,
+textarea{
+   padding: 20px 20px; 
+   margin: 8px 0;
+   border-radius: 3px;
+   background-color: #eeeeee;
+   border: 1.5px solid #212529;
+   outline: none;
+}
+button{
+    align-self: center;
+}  
+@media (max-width:1024px){
+    .grid{
+       grid-template-columns: repeat(1, 1fr);
+    }
+    .sectiontwo-left{
+        order: 1;
+    }
+    .sectiontwo-right{
+        order: 0;
+    }
+}

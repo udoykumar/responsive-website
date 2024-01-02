@@ -1,0 +1,237 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----hero section start---*/
+.hero{
+    background-color: var(--color-green-100);
+}
+
+/*---nev section start---*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+}
+.navbar-logo-text{
+    font-size: var(--h2);
+    color: var(--color-white-100);
+    font-family: var(--font-2);
+    font-weight: 500;
+
+}
+.navbar-menu{
+    display: flex;
+    gap: 15px;
+    font-family: var(--font-2);
+    font-size: var(--h5);
+}
+.navbar-menu a{
+    text-decoration: none;
+    color: var(--color-white-100);
+}
+.navbar-icon{
+    display: none;
+}
+.navbar-icon i{
+    font-size: var(--h2);
+    color: var(--color-white-100);
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+/*---common class name---*/
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+button:hover{
+    opacity: 0.8;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 25px;
+    padding: 40px 0;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.common-title{
+    font-size: var(--h1);
+    font-family: var(--font-2);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.text-center{
+    text-align: center;
+}
+.sectionone-left-btn{
+    align-self: start;
+}
+
+
+/*---style rules for label text----*/
+
+.label{
+    font-family: var(--font-2);
+    font-size: var(--label);
+    letter-spacing: var(--ls);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+/*---text color----*/
+.text-white{
+    color: var(--color-white-100);
+}
+.text-black{
+    color: var(--color-black-100);
+}
+.text-green{
+    color: var(--color-green-100);
+}
+/*---button----*/
+.white-btn, .black-btn{
+    background-color: var(--color-white-100);
+    color: var(--color-black-100);
+    cursor: pointer;
+    border: none;
+    font-family: var(--font-2);
+    font-size: var(--h5);
+    padding: 10px 40px;
+    border-radius: 8px;
+}
+.dark-btn{
+    background-color: var(--color-black-100);
+    color: var(--color-white-100);
+    cursor: pointer;
+    border: none;
+    font-family: var(--font-2);
+    font-size: var(--h5);
+    padding: 10px 40px;
+    border-radius: 8px;
+}
+
+
+/*---style rule for responsiv image---*/
+.responsive-image{
+    max-width: 100%;
+    height: auto;
+}
+
+/*---style rule for footerwrapper---*/
+.footerwrapper{
+    background-color: var(--color-green-100);
+
+}
+.footerlink{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerlink-social{
+    display: flex;
+    gap: 10px;
+}
+.footerlink-copyright{
+    font-family: var(--font-2);
+    font-size: 20px;
+    
+
+}
+
+
+
+/*---style rule for media queries---*/
+@media (max-width: 1200px){
+    .container{
+        max-width: 970px;
+    }
+    .common-title{
+        font-size: var(--h2);
+      }
+}
+
+@media (max-width: 1024px){
+    .container{
+        max-width: 740px;
+    }
+    .common-title{
+        font-size: var(--h2);
+      }
+}
+@media (max-width: 768px){
+    .container{
+        max-width: 500px;
+    }
+    .navbar-menu{
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: var(--color-green-100);
+        width: 100%;
+        height: 100vh;
+        gap: 40px;
+    }
+    .navbar-menu--1{
+       margin-top: -200px; 
+    }
+    .navbar-icon{
+        display: block;
+    }
+    .hiden{
+        z-index: -1;
+        opacity: 0;
+    }
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .white-btn, .black-btn{
+        font-size: var(--h6);
+        padding: 8px 25px;
+    }
+    .footerlink{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+
+}
+@media (max-width: 568px){
+    .container{
+        max-width: 90%;
+    }
+    .footerlink{
+      gap: 10px;
+    }
+    .footerlink-copyright{
+        font-family: var(--font-2);
+        font-size: 13px;
+    }
+    
+}
+
+
+ 

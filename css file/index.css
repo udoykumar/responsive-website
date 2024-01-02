@@ -1,0 +1,137 @@
+
+
+
+/*---sectionone one----*/
+.sectionone-left-text{
+  font-size: var(--body);
+  font-family: var(--font-2);
+  color: var(--color-white-75);
+}
+
+/*---sectionone two----*/
+.sectiontwo-contant--text{
+  font-family: var(--font-2);
+  font-size: var(sub);
+}
+.sectiontwo{
+  display: grid;
+  gap: 30px;
+  padding: 40px 0;
+}
+.sectiontwo-logo{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+}
+.sectiontwo-logo img{
+  justify-self: center;
+  align-self: center;
+}
+.sectiontwo-btn{
+  justify-self: center;
+}
+
+/*---sectionthree----*/
+/* 
+.sectionthree{
+  display: flex;
+  align-items: center;
+} */
+.sectionthree-right-text{
+  font-family: var(--font-2);
+  color: var(--color-black-75);
+  font-size: var(--body);
+}
+.sectionthree-btn {
+  margin-top: 20px;
+  align-self: center;
+}
+
+/*---sectionfour----*/
+
+.sectionfour-left-text{
+  color: var(--color-black-75);
+  font-family: var(--font-2);
+  font-size: var(--body);
+}
+.sectionfour-left-btn{
+  align-self: center;
+  margin-top: 20px;
+}
+
+/*---sectionfive----*/
+
+.sectionfive-content--text{
+  font-family: var(--font-2);
+  font-size: var(--sub);
+  color: var(--color-black-75);
+}
+.sectionfive{
+  display: grid;
+  gap: 30px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.sectionfive-cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+[class^="sectionfive-cards--"]{
+   box-shadow: var(--shadow-1);
+  padding: 20px 25px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+[class^="sectionfive-cards--"] .name{
+  font-family: var(--font-1);
+  font-size: var(--h5);
+  font-weight: bold;
+}
+[class^="sectionfive-cards--"] .position{
+  font-family: var(--font-2);
+  color: var(--color-black-75);
+  text-transform: uppercase;
+}
+.sectionfive-btn{
+  justify-self: center;
+  margin: 10px;
+}
+@media(max-width: 1200px){
+  .sectiontwo-logo{
+    grid-template-columns: repeat(3, 1fr);
+   gap: 40px;
+  }
+
+}
+
+@media(max-width:768px){
+  .sectionone-left{
+    order: 1;
+  }
+  .sectionone-right{
+    order: 0;
+  }
+  .sectionfour-left {
+    order: 1;
+  }
+  .sectionfour-right {
+    order: 0;
+  }
+  .sectionfive-cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+}
+@media(max-width: 576px){
+  .sectionfive-cards{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sectiontwo-logo{
+    grid-template-columns: repeat(1, 1fr);
+   gap: 40px;
+  }
+}

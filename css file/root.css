@@ -1,0 +1,43 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Work+Sans:ital,wght@0,100;0,400;0,600;0,700;0,800;0,900;1,800&display=swap');
+
+
+:root{
+
+    --h1: 40px;
+    --h2: 32px;
+    --h3: 28px;
+    --h4: 24px;
+    --h5: 20px;
+    --h6: 16px;
+     
+    --sub: 20px;
+
+    --lebel: 16px;
+    --ls: 5px;
+
+    --body: 14px;
+    
+    --color-black-100: rgba(33, 37, 41, 1);
+    --color-black-75: rgba(33, 37, 41, 0.75);
+    --color-black-50: rgba(33, 37, 41, 0.50);
+    --color-black-25: rgba(33, 37, 41, 0.25);
+
+    --color-white-100: rgba(255, 255, 255, 1);
+    --color-white-75: rgba(255, 255, 255, 0.75);
+    --color-white-50: rgba(255, 255, 255, 0.50);
+    --color-white-25: rgba(255, 255, 255, 0.25);
+
+    --color-green-100: rgb(1, 168, 224);
+    --color-green-75: rgba(166, 198, 157,0.75);
+    --color-green-50: rgba(166, 198, 157,0.50);
+    --color-green-25: rgba(166, 198, 157,0.25);
+
+
+    --font-1: 'Crimson Text', serif;
+    --font-2: 'Work Sans', sans-serif;
+
+    --shadow-1: 3px 4px 12px 1px rgba(0,0,0, 0.25);
+}
